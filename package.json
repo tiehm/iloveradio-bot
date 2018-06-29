@@ -1,8 +1,27 @@
 {
-  "name": "ILoveRadio-Bot",
-  "version": "0.0.1",
+  "name": "iloveradio-bot",
+  "version": "1.0.0",
   "dependencies": {
-    "chalk": "^2.4.1",
+    "charlog": "^0.1.0",
+    "typescript": "^2.9.2",
     "unirest": "^0.5.1"
-  }
+  },
+  "main": "dist/index",
+  "devDependencies": {
+    "@types/node": "^10.5.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiehm/iloveradio-bot.git"
+  },
+  "author": "tiehm <admin@tiehm.me> (https://tiehm.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tiehm/iloveradio-bot/issues"
+  },
+  "homepage": "https://github.com/tiehm/iloveradio-bot#readme",
+  "description": ""
 }
