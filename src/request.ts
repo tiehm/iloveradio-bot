@@ -21,12 +21,25 @@ function genUID (n, d) : string {
     return n;
 }
 
-function getUID() : string {
+const xLow = 750;
+const xHigh = 1200;
+const yLow = 600;
+const yHigh = 850;
+
+function getRandom(min: number, max: number): number {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+
+function generateXY(): string {
+    return `&x=${getRandom(xLow, xHigh)}y=${getRandom(yLow, yHigh)}`;
+}
+
+function getUID(): string {
     return genUID(Math.round(Math.random() * 100000), 6) + genUID(Math.round(Math.random() * 100000), 6);
 }
 
-function genURL(id, type) : string {
-    return `https://www.iloveradio.de//typo3conf/ext/ep_channel/Scripts/voting.php?r=${Math.ceil(Math.random() * 100000)}&tx_epvoting_voting_vote[vote]=${id}&tx_epvoting_voting_vote[math]=${type}&tx_epvoting_voting_vote[uniqueid]=${getUID()}`
+function genURL(id, type): string {
+    return `https://www.iloveradio.de/typo3conf/ext/ep_channel/Scripts/voting.php?r=${Math.ceil(Math.random() * 100000)}&tx_epvoting_voting_vote[vote]=${id}&tx_epvoting_voting_vote[math]=${type}&tx_epvoting_voting_vote[uniqueid]=${getUID()}${generateXY()}`;
 }
 
 export function request (proxy: string, song: string, vote: string) : Promise<boolean> {

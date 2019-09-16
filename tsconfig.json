@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
     "module": "commonjs",
-    "target": "es6",
-    "sourceMap": false,
+    "target": "es2018",
+    "sourceMap": true,
+    "declaration": true,
     "outDir": "dist"
   },
   "include": [

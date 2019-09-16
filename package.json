@@ -1,14 +1,14 @@
 {
   "name": "iloveradio-bot",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "dependencies": {
     "charlog": "^0.1.0",
-    "typescript": "^2.9.2",
-    "unirest": "^0.5.1"
+    "unirest": "^0.6.0"
   },
   "main": "dist/index",
   "devDependencies": {
-    "@types/node": "^10.5.1"
+    "@types/node": "^12.7.3",
+    "typescript": "^3.6.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

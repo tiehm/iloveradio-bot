@@ -24,7 +24,7 @@ node dist/index [songID] [vote]
 
 ``vote`` is either minus, for downvote, or plus for an upvote
 
-``songID`` is the unique ID for the song you try to bot, you can find this by Inspect Element looking for the `date-id` attribute
+``songID`` is the unique ID for the song you try to bot, you can find this by Inspect Element looking for the `data-id` attribute
 
 ## Licensing
 
